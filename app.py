@@ -36,7 +36,7 @@ def index():
 
     return render_template('index.html', result=result)
 
-openai.api_key = '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'
+openai.api_key = '' # Your api key here
 
 def prompt_openai(prompt):
     #prompt = f"Given the following input:\n{input_text}\n\nPlease provide relevant papers related to lifelong learning in reinforcement learning."
