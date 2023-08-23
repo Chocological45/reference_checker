@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison Tool</title>
+</head>
+<body>
+    <h1>Comparison Tool</h1>
+    <form method="POST">
+        <textarea name="text" rows="10" cols="50" placeholder="Enter text..."></textarea><br>
+        <input type="submit" value="Compare">
+    </form>
+    
+    {% if result %}
+    <h2>Comparison Results</h2>
+    <pre>{{ result|safe }}</pre>
+    {% endif %}
+</body>
+</html>
